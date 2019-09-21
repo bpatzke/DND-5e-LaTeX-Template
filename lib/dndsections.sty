@@ -111,6 +111,25 @@
     \par \vspace{ 3pt plus 1pt minus 1pt } \noindent \ignorespaces
   }
 
+\NewDocumentCommand {\DndWeaponHeader} { m m m m m }
+  {
+    \DndItemHeader {#1} {#2}
+
+    \begin{description}
+      [
+        nosep,
+        labelsep = \l__dnd_space_dim,
+        after    = { \vspace{4pt plus 1pt minus 1pt} },
+      ]
+      \item [ \weapondamagename : ] #3
+      \item [ \weaponproperty   : ] #4
+      \item [ \weaponweight     : ] #5
+    \end{description}
+  }
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Special command for spells.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

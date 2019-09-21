@@ -111,6 +111,14 @@
     \par \vspace{ 3pt plus 1pt minus 1pt } \noindent \ignorespaces
   }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Special command for weapons.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% #1 - Name
+% #2 - Details
+% #3 - Damage
+% #4 - Properties
+% #5 - Weight
 \NewDocumentCommand {\DndWeaponHeader} { m m m m m }
   {
     \DndItemHeader {#1} {#2}
@@ -121,9 +129,9 @@
         labelsep = \l__dnd_space_dim,
         after    = { \vspace{4pt plus 1pt minus 1pt} },
       ]
-      \item [ \weapondamagename : ] #3
-      \item [ \weaponproperty   : ] #4
-      \item [ \weaponweight     : ] #5
+      \item [ \weapondamagename   : ] #3
+      \item [ \weaponpropertyname : ] #4
+      \item [ \weaponweightname   : ] #5
     \end{description}
   }
 

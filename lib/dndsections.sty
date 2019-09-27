@@ -15,10 +15,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter
 \titleformat {\chapter}
-  { \DndFontChapter } % format
-  {\thechapter. }     % Auto-generated chapter label "#. "
-  { 0pt }             % Space separating the auto-generate text and the title.
-  {}                  % Put this before the title text.
+  { \DndFontChapter }                % format
+  { \chaptertitlename\ \thechapter.} % Auto-generated chapter label.
+  { \wordsep }                       % Space separating the auto-generate text and the title.
+  {}                                 % Put this before the title text.
 
 \titlespacing* {\chapter}
   { 0pt }  % left

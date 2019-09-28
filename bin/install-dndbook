@@ -7,9 +7,9 @@ LIBSRCDIR="$SRCDIR/lib"
 
 LOCALBASE="$HOME/Library/texmf/tex/latex"
 
-cp -pv $SRCDIR/dndbook.cls $LOCALBASE
-cp -pv $SRCDIR/dnd-phb.sty $LOCALBASE
-cp -pv $SRCDIR/dndcore.def $LOCALBASE
-cp -pv $SRCDIR/dndoptions.clo $LOCALBASE
-cp -pRv $IMGSRCDIR $LOCALBASE
-cp -pRv $LIBSRCDIR $LOCALBASE
+cp -p $SRCDIR/dndbook.cls $LOCALBASE
+cp -p $SRCDIR/dnd-phb.sty $LOCALBASE
+cp -p $SRCDIR/dndcore.def $LOCALBASE
+cp -p $SRCDIR/dndoptions.clo $LOCALBASE
+cp -pR $IMGSRCDIR $LOCALBASE
+cp -pR $LIBSRCDIR $LOCALBASE
